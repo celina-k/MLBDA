@@ -1,0 +1,26 @@
+<!DOCTYPE mondial [
+<!ELEMENT mondial (continent+)>
+<!ELEMENT continent (country+)>
+<!ELEMENT country (province*,  organizations?)>
+<!ELEMENT province (mountains?, rivers?)>
+<!ELEMENT mountains (mountain*)> 
+<!ELEMENT rivers (river+)>
+<!ELEMENT organizations (organization+)>
+<!ELEMENT river (#PCDATA)>
+<!ELEMENT mountain (#PCDATA)>
+<!ELEMENT organization (#PCDATA)>
+<!ATTLIST continent name CDATA #REQUIRED>
+<!ATTLIST province name CDATA #REQUIRED>
+<!ATTLIST country name CDATA #REQUIRED
+		  population CDATA #REQUIRED
+		borderslength CDATA #REQUIRED>
+
+<!ATTLIST mountain  
+		altitude CDATA #REQUIRED
+		latitude CDATA #REQUIRED
+		longitude CDATA #REQUIRED>
+
+  
+
+<!ATTLIST organization date CDATA #IMPLIED>
+]>

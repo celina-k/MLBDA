@@ -1,0 +1,24 @@
+<!DOCTYPE mondial [
+<!ELEMENT mondial (country+)>
+<!ELEMENT country (geo, peak?) >
+<!ELEMENT peak EMPTY >
+<!ATTLIST peak name CDATA #REQUIRED >
+<!ATTLIST country name CDATA #REQUIRED >
+<!ELEMENT geo ( (mountain|desert)*, island* ) >
+
+<!ELEMENT mountain EMPTY >
+<!ATTLIST mountain name CDATA #REQUIRED 
+                   height CDATA #REQUIRED >
+
+<!ELEMENT desert EMPTY >
+<!ATTLIST desert name CDATA #REQUIRED 
+                 area CDATA #IMPLIED >
+
+<!ELEMENT island (coordinates?) >
+<!ATTLIST island name CDATA #REQUIRED >
+
+<!ELEMENT coordinates EMPTY >
+<!ATTLIST coordinates latitude CDATA #REQUIRED
+                      longitude CDATA #REQUIRED>
+
+]>

@@ -1,0 +1,11 @@
+<!DOCTYPE mondial [
+<!ELEMENT mondial (country+) >
+<!ELEMENT country (contCountries) >
+<!ATTLIST country name CDATA #REQUIRED continent CDATA #REQUIRED >
+
+<!ELEMENT contCountries (border*) > 
+
+<!ELEMENT border EMPTY>
+<!ATTLIST border countryCode CDATA #REQUIRED
+                 length CDATA #REQUIRED >
+                 ]>
