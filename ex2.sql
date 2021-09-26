@@ -14,7 +14,7 @@ from Mondial m;
 
 -- permet de générer le fichier xml de la question 3 de l'exercice 2
 WbExport -type=text
-         -file='TEST.xml'
+         -file='ex2Q3-DTD4.xml'
          -createDir=true
          -encoding=UTF-8
          -header=false

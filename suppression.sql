@@ -1,3 +1,4 @@
+-- exécuter ce fichier permet de supprimer toutes les tables et tous les objets.
 DROP TABLE Mondial;
 /
 DROP TABLE TheCountries;
@@ -31,8 +32,6 @@ DROP TABLE TheLanguages ;
 DROP TABLE TheMembers ;
 /
 DROP TABLE TheSources ;
-/
-DROP TABLE TheRivers ;
 /
 
 DROP TYPE T_EnsCountries ;
@@ -92,8 +91,6 @@ DROP TYPE  T_isMember;
 DROP TYPE T_ensSources ;
 /
 DROP TYPE T_Source ;
-/
-DROP TYPE T_River ;
 /
 DROP TYPE T_ensChar;
 /

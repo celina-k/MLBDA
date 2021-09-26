@@ -1,3 +1,4 @@
+-- ce fichier permet de créer tous les objets, leurs tables associées et de remplir ses tables.
 create or replace type T_Mondial as object (
   monde varchar2 (100),
   member function toXML(i number) return XMLType
@@ -283,8 +284,7 @@ create or replace type T_Language as object (
 create table TheLanguages of T_Language (
   CONSTRAINT lcountry CHECK (not(COUNTRY is null)),
   CONSTRAINT lname CHECK (not(NAME is null)),
-  CONSTRAINT lpercentage CHECK ((PERCENTAGE >= -180) AND (PERCENTAGE <= 180))
-
+  CONSTRAINT lpercentage CHECK ((PERCENTAGE >= 0))
 );
 /
 
